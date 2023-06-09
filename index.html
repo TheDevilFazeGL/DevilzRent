@@ -62,7 +62,7 @@
         <div class="col-md-7">
           <div class="pull-right">
             <div class="header-info pull-right">
-              <div class="contact pull-left">89028580248
+                 <div class="contact pull-left">89028580248
                   <ul class="social-icons">
   <li><a class="social-icon-vk" href="https://vk.com/thedevilzfazegaragelab" title="VK" target="_blank" rel="noopener">VK</a></li>
   <li><a class="social-icon-telegram" href="https://web.telegram.org/k/#-969307878" title="Telegram" target="_blank" rel="noopener">TG</a></li>
@@ -109,7 +109,41 @@
     <!-- Header end -->
 
 
+<dialog onclose="open" id="closeMe" class="dialog">
+        </div>
+    </div>
+    <h2>Ваш заказ: Nissan Silvia</h2>
+  <p>Если вы хотите арендовать машину на несколько часов, условия можно обсудить непосредственно с менеджером.</p>
+    <!-- Personal info start -->
+     <div class="checkout-personal-info">
+                      <div class="alert hidden" id="checkout-form-msg">
+                        test
+                      </div>
+                      <div class="form-group left">
+                        <input type="text" class="form-control" name="first-name" id="first-name" placeholder="Ваше имя">
+                      </div>
+                      <div class="form-group left">
+                        <input type="text" class="form-control" name="phone-number" id="phone-number" placeholder="Номер телефона">
+                      </div>
+                     <div class="form-group left">
+                      <input type="email" class="form-control" name="pickup-date" id="pickup-date" placeholder="Укажите дату аренды">
+                    </div>
+                    <div class="form-group right">
+                      <input type="email" class="form-control" name="email-address" id="email-address" placeholder="Укажите почту">
+                    </div>
+          <div class="form-group right">
+                      <input type="email" class="form-control" name="bonus" id="bonus" placeholder="Дополнительные пожелания">
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
 
+  <button class="button button--dark" type="button" onclick="window['closeMe'].close();">
+    Забронировать
+  </button>
+    <button class="button button--dark" type="button" onclick="window['closeMe'].close();">
+    Отмена
+  </button>
+</dialog>
     <!-- Teaser start -->
      <section id="teaser">
       <div class="container">

@@ -154,6 +154,13 @@ a:hover {
 }
 /* Header
 --------------------------------------------*/
+header {
+ height: 500px;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0);
+}
 header .box {
   margin: 0 auto;
 }
@@ -224,7 +231,7 @@ header .header-info .contact {
   list-style-type: none;
   position: fixed;
   top: unset;
-  left: auto;
+  right: auto;
   width: auto;
 }
 header .navbar-default {
@@ -233,7 +240,7 @@ header .navbar-default {
   border-radius: 0;
   font-size: 18px;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 header .navbar-brand {
   display: none;
