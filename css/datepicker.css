@@ -6,7 +6,8 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  */
-.datepicker {
+
+.dialog .datepicker {
   top: 0;
   left: 0;
   padding: 4px;
@@ -19,7 +20,7 @@
   }*/
 
 }
-.datepicker:before {
+.dialog .datepicker:before {
   content: '';
   display: inline-block;
   border-left: 7px solid transparent;
@@ -30,7 +31,7 @@
   top: -7px;
   left: 6px;
 }
-.datepicker:after {
+.dialog .datepicker:after {
   content: '';
   display: inline-block;
   border-left: 6px solid transparent;
@@ -40,15 +41,15 @@
   top: -6px;
   left: 7px;
 }
-.datepicker > div {
+.dialog .datepicker > div {
   display: none;
 }
-.datepicker table {
+.dialog .datepicker table {
   width: 100%;
   margin: 0;
 }
-.datepicker td,
-.datepicker th {
+.dialog .datepicker td,
+.dialog .datepicker th {
   text-align: center;
   width: 20px;
   height: 20px;
@@ -56,19 +57,19 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.datepicker td.day:hover {
+.dialog .datepicker td.day:hover {
   background: #eeeeee;
   cursor: pointer;
 }
-.datepicker td.day.disabled {
+.dialog .datepicker td.day.disabled {
   color: #eeeeee;
 }
-.datepicker td.old,
-.datepicker td.new {
+.dialog .datepicker td.old,
+.dialog .datepicker td.new {
   color: #999999;
 }
-.datepicker td.active,
-.datepicker td.active:hover {
+.dialog .datepicker td.active,
+.dialog .datepicker td.active:hover {
   color: #ffffff;
   background-color: #006dcc;
   background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
@@ -87,29 +88,29 @@
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.datepicker td.active:hover,
-.datepicker td.active:hover:hover,
-.datepicker td.active:focus,
-.datepicker td.active:hover:focus,
-.datepicker td.active:active,
-.datepicker td.active:hover:active,
-.datepicker td.active.active,
-.datepicker td.active:hover.active,
-.datepicker td.active.disabled,
-.datepicker td.active:hover.disabled,
-.datepicker td.active[disabled],
-.datepicker td.active:hover[disabled] {
+.dialog .datepicker td.active:hover,
+.dialog .datepicker td.active:hover:hover,
+.dialog .datepicker td.active:focus,
+.dialog .datepicker td.active:hover:focus,
+.dialog .datepicker td.active:active,
+.dialog .datepicker td.active:hover:active,
+.dialog .datepicker td.active.active,
+.dialog .datepicker td.active:hover.active,
+.dialog .datepicker td.active.disabled,
+.dialog .datepicker td.active:hover.disabled,
+.dialog .datepicker td.active[disabled],
+.dialog .datepicker td.active:hover[disabled] {
   color: #ffffff;
   background-color: #0044cc;
   *background-color: #003bb3;
 }
-.datepicker td.active:active,
-.datepicker td.active:hover:active,
-.datepicker td.active.active,
-.datepicker td.active:hover.active {
+.dialog .datepicker td.active:active,
+.dialog .datepicker td.active:hover:active,
+.dialog.datepicker td.active.active,
+.dialog .datepicker td.active:hover.active {
   background-color: #003399 \9;
 }
-.datepicker td span {
+.dialog .datepicker td span {
   display: block;
   width: 47px;
   height: 54px;
@@ -121,10 +122,10 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.datepicker td span:hover {
+.dialog .datepicker td span:hover {
   background: #eeeeee;
 }
-.datepicker td span.active {
+.dialog .datepicker td span.active {
   color: #ffffff;
   background-color: #006dcc;
   background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
@@ -143,38 +144,38 @@
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-.datepicker td span.active:hover,
-.datepicker td span.active:focus,
-.datepicker td span.active:active,
-.datepicker td span.active.active,
-.datepicker td span.active.disabled,
-.datepicker td span.active[disabled] {
+.dialog .datepicker td span.active:hover,
+.dialog .datepicker td span.active:focus,
+.dialog .datepicker td span.active:active,
+.dialog .datepicker td span.active.active,
+.dialog .datepicker td span.active.disabled,
+.dialog .datepicker td span.active[disabled] {
   color: #ffffff;
   background-color: #0044cc;
   *background-color: #003bb3;
 }
-.datepicker td span.active:active,
-.datepicker td span.active.active {
+.dialog .datepicker td span.active:active,
+.dialog .datepicker td span.active.active {
   background-color: #003399 \9;
 }
-.datepicker td span.old {
+.dialog .datepicker td span.old {
   color: #999999;
 }
-.datepicker th.switch {
+.dialog .datepicker th.switch {
   width: 145px;
 }
-.datepicker th.next,
-.datepicker th.prev {
+.dialog .datepicker th.next,
+.dialog .datepicker th.prev {
   font-size: 21px;
 }
-.datepicker thead tr:first-child th {
+.dialog .datepicker thead tr:first-child th {
   cursor: pointer;
 }
-.datepicker thead tr:first-child th:hover {
+.dialog .datepicker thead tr:first-child th:hover {
   background: #eeeeee;
 }
-.input-append.date .add-on i,
-.input-prepend.date .add-on i {
+.dialog .input-append.date .add-on i,
+.dialog .input-prepend.date .add-on i {
   display: block;
   cursor: pointer;
   width: 16px;
