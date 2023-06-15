@@ -96,22 +96,47 @@ body {
     float: right;
     margin-right: 768px;
     padding-top: 100px;
+    position: relative;
+}
+
+#left,
+#right {
+  background-color: rgba(10, 10, 10, 0.5);
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  flex-grow: 1;
+  color: #fff;
+}
 }
 .car-img {
     width: 100%;
+
 }
 /* Text
 --------------------------------------------*/
+#description {
+
+}
 .text {
   background-color: #eee0ff;
     color: #4e4559;
   padding: 0;
-    position: absolute;
-    float: right;
-  width: 35%;
-    margin-left: 775px;
-    margin-top: -320px;
+    position: fixed;
+    float: left;
+  width: 600px;
+    margin-left: 700px;
+    margin-top: -390px;
 }
+
+#left,
+#right {
+  background-color: rgba(10, 10, 10, 0.5);
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  flex-grow: 1;
+  color: #fff;
+}
+
 /* Label
 --------------------------------------------*/
 .label-default {
@@ -223,7 +248,37 @@ header .header-info .contact {
   background-image: url("https://web.telegram.org/k/#-969307878");
 }
 .social-icons .social-icon-youtube::before {
-  background-image: url("https://www.youtube.com/@TDF_Garage_Lab");
+    background-image: url("https://www.youtube.com/@TDF_Garage_Lab");
+}
+  .social a {
+    text-align: center;
+    width: 33px;
+    height: 33px;
+    float: left;
+    background:
+#fff;
+    border: 1px solid
+#ccc;
+    box-shadow: 0 2px 4px
+rgba(0,0,0,0.15), inset 0 0 50px
+rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 0 7px 7px 0;
+    padding: 0px;
+    color:
+#000;
+}
+  .vk a:hover {background:
+#5d84ae; color:
+#fff;}
+  .telegram a:hover {background:
+#249bd7; color:
+#fff;}
+  .youtube a:hover {background:
+#c4302b; color:
+#fff;}
+  .social a i {
+    font-size: 1.5em !important;
 }
 /* Navbar
 --------------------------------------------*/
@@ -319,7 +374,7 @@ header.large .brand {
       background-color: var(--back);
       outline: none;
       position: relative;
-        left: 255px;
+        left: 520px;
         top: 15px;
         padding-right: 70px;
         padding-left: 70px;
@@ -425,214 +480,6 @@ header.large .brand {
   </style>
 /* Teaser
 -------------------------------------*/
-#teaser {
-  height: 600px;
-  padding: 60px 0;
-  background-color: #303131;
-  background: linear-gradient(to bottom, #303131 0%, #4d4f4f 50%, #303131 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@mainColor', endColorstr='@mainColor', GradientType=0);
-}
-.dialog .reservation-form-shadow {
-  height: 480px;
-  background-color: #fff;
-  box-shadow: 0 9px 0px 0px #ffffff, 0 -9px 0px 0px #ffffff, 7px 0 15px -4px rgba(0, 0, 0, 0.3), -7px 0 15px -4px rgba(0, 0, 0, 0.3);
-}
-.dialog form {
-  padding: 34px;
-}
-.dialog form .alert {
-  margin-top: -20px;
-  padding: 10px 15px;
-}
-.dialog form ::-webkit-input-placeholder {
-  color: #c61334 !important;
-}
-.dialog form :-moz-placeholder {
-  color: #c61334 !important;
-}
-.dialog form ::-moz-placeholder {
-  color: #c61334 !important;
-}
-.dialog form :-ms-input-placeholder {
-  color: #c61334 !important;
-}
-.dialog form .styled-select-car {
-  border: 2px solid #efe9e9;
-  height: 55px;
-  position: relative;
-  margin-bottom: 23px;
-}
-.dialog form .styled-select-car:after {
-  content: '';
-  background: #ffffff url('../img/dropdown-icon.png') no-repeat 5px 23px;
-  right: 0px;
-  top: 0px;
-  width: 30px;
-  height: 51px;
-  position: absolute;
-  pointer-events: none;
-}
-.dialog form .styled-select-car select {
-  border: none;
-  font-size: 24px;
-  font-weight: bold;
-  width: 100%;
-  background-image: none;
-  background: #fff;
-  -webkit-appearance: none;
-  padding: 9px 10px;
-  height: 51px;
-  outline: none;
-}
-.dialog form .location {
-  margin-bottom: 27px;
-}
-.dialog form .datetime {
-  margin-bottom: 11px;
-}
-.dialog form .form-control {
-  height: 43px;
-  border: 2px solid #efe9e9;
-  box-shadow: none;
-}
-.dialog form .input-group {
-    width: 100%;
-}
-.dialog form .input-group input {
-  border-radius: 0;
-  color: #c61334;
-  font-size: 16px;
-  padding-left: 15px;
-  box-shadow: none;
-  background: none;
-  -webkit-appearance: none;
-}
-.dialog form .input-group-addon {
-  border-radius: 0;
-  border: none;
-  background-color: #efe9e9;
-  font-weight: bold;
-  font-size: 16px;
-  color: #716d6e;
-  width: 110px;
-  text-align: left;
-}
-.dialog form .input-group-addon .glyphicon {
-  font-size: 17px;
-  margin: 0 2px 0 -2px;
-}
-.dialog form .different-drop-off {
-  color: #716d6e;
-  font-weight: bold;
-  margin: 10px 0;
-  display: block;
-}
-.dialog form .date {
-  width: 240px;
-}
-.dialog form .time {
-  width: 140px;
-}
-.dialog form .pixelfix {
-  border-top: 1px solid #fff;
-}
-.dialog form .styled-select-time {
-  border: 2px solid #efe9e9;
-  height: 43px;
-  position: relative;
-}
-.dialog form .styled-select-time:after {
-  content: '';
-  background: #ffffff url('../img/dropdown-icon.png') no-repeat 5px 18px;
-  right: 0px;
-  top: 0px;
-  width: 30px;
-  height: 39px;
-  position: absolute;
-  pointer-events: none;
-}
-.dialog form .styled-select-time select {
-  border: none;
-  font-size: 16px;
-  width: 100%;
-  background-image: none;
-  background: #fff;
-  -webkit-appearance: none;
-  padding: 10px 10px;
-  height: 39px;
-  color: #c61334;
-}
-.dialog form .submit {
-  width: 100%;
-  background-color: #c61334;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  box-shadow: 6px 6px 0 #efe9e9;
-  text-align: center;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 900;
-  padding: 10px 0;
-  margin-top: 30px;
-  transition: 0.2s;
-}
-.dialog form .submit:hover {
-  background-color: #716d6e;
-}
-.dialog .title {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: 900;
-  margin: 0;
-}
-.dialog .subtitle {
-  font-size: 24px;
-  color: #dbdbdb;
-  text-transform: none;
-  display: block;
-  font-weight: normal;
-  margin-top: 10px;
-}
-.dialog .car-img {
-  height: 375px;
-  text-align: center;
-  line-height: 400px;
-}
-.dialog .car-img img {
-  display: inline-block;
-}
-.dialog .carousel-control {
-  position: relative;
-}
-.dialog .carousel-control.left,
-.dialog.carousel-control.right {
-  background-image: none;
-  margin: 0;
-  width: 30px;
-}
-.dialog .carousel-control.left {
-  left: 90%;
-}
-.dialog .carousel-control.right {
-  left: 95%;
-}
-#teaser .carousel-control .glyphicon-chevron-left,
-#teaser .carousel-control .glyphicon-chevron-right {
-  margin: 0;
-}
-#teaser .carousel-control .glyphicon-chevron-right {
-  right: auto;
-}
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 37px solid transparent;
-    border-right: 37px solid transparent;
-    border-top: 37px solid #303131;
-    margin: 0 auto;
-}
 /* Services
 --------------------------------------------*/
 
